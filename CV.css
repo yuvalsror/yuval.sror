@@ -46,6 +46,10 @@
     background-color: rgba(87, 49, 49, 0.2);
     color: #131212;
     padding: 15px;
+    animation-name: changeColor; 
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
   }
   
   .menu ul {
@@ -71,7 +75,12 @@
       background-color: rgba(87, 49, 49, 0.2);
       padding: 20px;
       margin: 0px auto 0;
-      width: 100%;   
+      width: 100%;  
+      animation-name: changeColor; 
+      animation-duration: 2s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+     
     
   }
   .col-12 h2{
@@ -148,9 +157,17 @@
     letter-spacing: 5px;
   }
 
+ 
+
 .submit:hover{
     opacity: 1;
     cursor: pointer;
     background-color: rgb(73, 69, 69);
   }
+
+  @keyframes changeColor {
+    from {background-color: rgba(87, 49, 49, 0.2);}
+    to {background-color: rgba(4, 15, 10, 0.61);}
+    
+  } 
   
